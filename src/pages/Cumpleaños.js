@@ -4,6 +4,9 @@ import Sidebar from '../components/Sidebar'
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Contenido from '../components/Contenido';
+import Recurso483 from '../assets/projects_images/Recurso 483.png'
+ 
+ const img=<img src={Recurso483} alt="avatar" className="imgTitulo" />
 export default function Cumpleaños() {
     return (
         <div className="app">
@@ -19,10 +22,15 @@ export default function Cumpleaños() {
           </div>
           <div className="col-lg-9 col-sm-12">
         
-        <Contenido titulo="Cumpleaños"/>
+        <Contenido titulo={img}/>
         </div>
+         <div className="col-lg-12 col-sm-12">
+         
+         <Footer/>
+        
+         </div>
      </div>
-     <Footer/>
+    
      </div>
      </div>
     )

@@ -1,12 +1,14 @@
 import React from 'react'
 import Sidebar from '../components/Sidebar'
-
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Contenido from '../components/Contenido';
-
+import Recurso460 from '../assets/projects_images/Recurso 460.png'
+ 
+ const img=<img src={Recurso460} alt="avatar" className="imgTitulo" />
 
 export default function SabiasQue() {
+ 
     return (
     <div className="app">
      <Header/>
@@ -21,10 +23,15 @@ export default function SabiasQue() {
           </div>
           <div className="col-lg-9 col-sm-12">
         
-        <Contenido titulo="¿Sabias que?"/>
+        <Contenido titulo={img} />
         </div>
+         <div className="col-lg-12 col-sm-12">
+         
+         <Footer/>
+        
+         </div>
      </div>
-     <Footer/>
+    
      </div>
      </div>
         

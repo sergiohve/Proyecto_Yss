@@ -10,6 +10,8 @@ import Recurso130 from '../assets/projects_images/Recurso 130.png'
 
 import Recurso124 from '../assets/projects_images/Recurso 124.png'
 
+              
+              
 const Sidebar = () => {
     
 

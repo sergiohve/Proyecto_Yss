@@ -1,6 +1,5 @@
 import React from 'react'
 import Sidebar from '../components/Sidebar'
-
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Contenido from '../components/Contenido'
@@ -21,8 +20,13 @@ export default function NuevosIngresos() {
         
         <Contenido titulo="Nuevos ingresos"/>
         </div>
+         <div className="col-lg-12 col-sm-12">
+         
+         <Footer/>
+        
+         </div>
         </div>
-        <Footer/>
+       
         </div>
         </div>
     )
