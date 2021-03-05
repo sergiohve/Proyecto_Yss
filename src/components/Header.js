@@ -59,21 +59,19 @@ const useStyles = makeStyles((theme) => ({
       display: 'none',
     },
   },
-  link: {
-    width: "60px",
-  },
    linkk: {
     width: "290px",
     paddingBottom: "16px",
   },
-   link: {
+  link: {
+    
     width: "70px",
     paddingBottom:"-10px",
     marginRight: "25px",
   },
   linkkk: {
     width: "100px",
-    paddingBottom: "14px"
+    paddingBottom: "14px",
   },
   salir: {
     textAlign: "center",
@@ -180,7 +178,7 @@ export default function Header() {
     
             </IconButton>
             
-            <Link to="/" className={classes.link}><img src={Recurso133} alt="avatar" className="sidebar__avr" /><img src={Recurso132} className={classes.link} /></Link>
+            <Link to="/" ><img src={Recurso133} alt="avatar" className={classes.link} /><br/><img src={Recurso132} className={classes.link} alt="avatar" /></Link>
               
             
           </div>

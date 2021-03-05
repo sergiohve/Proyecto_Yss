@@ -40,7 +40,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sergiohve/Proyecto_Yss.git"
+    "url": ""
   },
   "keywords": [
     "React",
@@ -49,7 +49,7 @@
   "author": "Sergio Herrera",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sergiohve/Proyecto_Yss/issues"
+    "url": "https://github.com/sergiohve/"
   },
-  "homepage": "https://github.com/sergiohve/Proyecto_Yss#readme"
+  "homepage": "https://github.com/"
 }

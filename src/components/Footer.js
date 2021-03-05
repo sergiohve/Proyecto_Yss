@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: "30px",
     marginTop: "80px",
     color: "black",
-    marginTop: "300px",
+  
   
   },
   imgFooter: {
