@@ -30,7 +30,7 @@ export default function Cumpleaños() {
         
          </div>
      </div>
-     <Footer/>
+     
      </div>
      </div>
     )

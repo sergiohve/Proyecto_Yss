@@ -2,8 +2,7 @@ import React from 'react'
 import Sidebar from '../components/Sidebar'
 
 import Footer from '../components/Footer';
-import Header from '../components/Header';
-import Contenido from '../components/Contenido';
+
 import {  makeStyles } from '@material-ui/core/styles';
 import { Link } from 'react-router-dom';
 import AppBar from '@material-ui/core/AppBar';
@@ -16,9 +15,9 @@ import AccountCircle from '@material-ui/icons/AccountCircle';
 
 import MoreIcon from '@material-ui/icons/MoreVert';
 import Recurso133 from '../assets/projects_images/Recurso 133.png';
-import Recurso131 from '../assets/projects_images/Recurso 131.png'
+import Recurso598 from '../assets/projects_images/Recurso 598.png'
 import Recurso138 from '../assets/projects_images/Recurso 138.png'
-import Recurso132 from '../assets/projects_images/Recurso 132.png'
+
 import Recurso136 from '../assets/projects_images/Recurso 136.png'
 
 import Recurso121 from '../assets/projects_images/Recurso 121.png'
@@ -28,11 +27,11 @@ import Recurso127 from '../assets/projects_images/Recurso 127.png'
 import Recurso128 from '../assets/projects_images/Recurso 128.png'
 import Recurso129 from '../assets/projects_images/Recurso 129.png'
 import Recurso130 from '../assets/projects_images/Recurso 130.png'
-import Recurso134 from '../assets/projects_images/Recurso 134.png'
-
+import Recurso599 from '../assets/projects_images/Recurso 599.png'
 import Recurso124 from '../assets/projects_images/Recurso 124.png'
 import Bannerscarrusel03 from '../assets/projects_images/Banners carrusel-03.png'
-
+import Recurso142 from '../assets/projects_images/Recurso 142.png'
+import Recurso600 from '../assets/projects_images/Recurso 600.png'
 const useStyles = makeStyles((theme) => ({
   grow: {
     flexGrow: 1,
@@ -224,14 +223,15 @@ export default function MasCercadeti() {
       
       <div className="container app__container" style={{marginTop: "40px"}}>
         
-        <div className="row app__row">
+        <div className="row ">
          <div className="col-lg-8 col-sm-12">
           <Link to="/cumpleaños" className="link"><img src={Bannerscarrusel03} alt="avatar" className="sidebar__avr" /></Link>
          </div>
          <div className="col-lg-4 col-sm-12">
           <Link to="/cumpleaños" className="link"><img src={Recurso121} alt="avatar" className="sidebar__avr" style={{height: "233px"}} /></Link>
          </div>
-        
+         </div>
+         <div className="row ">
           <div className="col-lg-4 col-sm-12">
            
 
@@ -269,25 +269,39 @@ export default function MasCercadeti() {
             
            
            
-            <img src={Recurso124} alt="avatar" className="sidebar__avatar" />
+          
             
             
             
            </div>
         </div>
          <div className="col-lg-4 col-sm-12">
-         <h3>Reconocimiento Apple</h3>
-         <img src={Recurso124} alt="avatar" className="sidebar__avatar" />
+         <h3 className="titulo_cerca">Reconocimiento Apple</h3>
+         <Link to="/reconocimientoapple" className="link"> <img src={Recurso142} alt="avatar" className="img_cerca" /></Link>
 
          </div>
           <div className="col-lg-4 col-sm-12">
-         <img src={Recurso124} alt="avatar" className="sidebar__avatar" />
+          <h3 className="titulo_cercaa">Capacitación</h3>
+          <Link to="/capacitacion" className="link"><img src={Recurso599} alt="avatar" className="img_cercaa" /></Link>
 
          </div>
-          <div className="col-lg-8 col-sm-12">
+         </div>
+         <div className="row">
+         <div className="col-lg-4 col-sm-12">
         
-      
-        </div>
+         <img src={Recurso124} alt="avatar" className="img_cercaaa" />
+         </div>
+         <div className="col-lg-4 col-sm-12">
+         <h3 className="titulo_cercaaa">Beneficios</h3>
+       <img src={Recurso598} alt="avatar"  className="img_cercaaaa" />
+       </div>
+       <div className="col-lg-4 col-sm-12">
+       <h3 className="titulo_cercaaa">Seguridad y Prevención</h3>
+              <img src={Recurso600} alt="avatar"  className="img_cercaaaa" />
+       </div>
+       </div>
+
+         
          <div className="col-lg-12 col-sm-12">
          
          <Footer/>
@@ -296,6 +310,6 @@ export default function MasCercadeti() {
      </div>
     
      </div>
-     </div>
+    
     )
 }

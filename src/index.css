@@ -152,7 +152,54 @@ a:hover {
     margin: 20px -15px;
 
 }
+.img_cerca{
+    width: 400px;
+   height: 240px;
+    margin-top: -15px;
+    margin-right: auto;
+    margin-left: -25px;
+}
+.img_cercaa{
+    width: 350px;
+    height: 217px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -4px;
+   
+   
+}
+.img_cercaaa{
+    width: 330px;
+    margin-right: auto;
+    margin-left: 10px;
+   
+   
+}
+.img_cercaaaa{
+    width: 350px;
+    height: 216px;
+    margin-right: auto;
+   
+   
+   
+}
+.titulo_cerca{
+    margin-top: 15px;
+    color:#032342;
+    font-weight: bold;
+}
+.titulo_cercaa{
+    margin-top: 14px;
+    color:#032342;
+    font-weight: bold;
 
+   
+}
+.titulo_cercaaa{
+    margin-top: -40px;
+    color:#032342;
+    font-weight: bold;
+}
 .sidebar__email {
     background-image: linear-gradient(to right bottom, #00F260, #0575E6);
 
