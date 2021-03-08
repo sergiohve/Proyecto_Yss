@@ -33,7 +33,7 @@ export default function Footer() {
   
 
   return (
-    <BottomNavigation className={classes.root}>
+    <div className={classes.root}>
       
      
        <div className="col-lg-12 col-sm-12">
@@ -45,6 +45,6 @@ export default function Footer() {
          
        
       
-    </BottomNavigation>
+    </div>
   );
 }

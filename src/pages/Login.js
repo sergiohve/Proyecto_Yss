@@ -1,103 +1,141 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import Avatar from '@material-ui/core/Avatar';
-import Button from '@material-ui/core/Button';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import TextField from '@material-ui/core/TextField';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import Checkbox from '@material-ui/core/Checkbox';
+import React, { useState } from "react";
 
-import Grid from '@material-ui/core/Grid';
-import Box from '@material-ui/core/Box';
-import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
-import Typography from '@material-ui/core/Typography';
-import { makeStyles } from '@material-ui/core/styles';
-import Container from '@material-ui/core/Container';
+import { Formik, Form, ErrorMessage } from "formik";
+import * as Yup from "yup";
+
+import { Link, Redirect } from "react-router-dom";
+import {
+  PageWrapper,
+  Label,
+  Input,
+  StyledInlineErrorMessage,
+  Submit
+} from "./formik/styles";
 
 
 
 
-const useStyles = makeStyles((theme) => ({
-  paper: {
-    marginTop: theme.spacing(8),
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-  },
-  avatar: {
-    margin: theme.spacing(1),
-    backgroundColor: theme.palette.secondary.main,
-  },
-  form: {
-    width: '100%', // Fix IE 11 issue.
-    marginTop: theme.spacing(1),
-  },
-  submit: {
-    margin: theme.spacing(3, 0, 2),
-  },
-}));
 
-export default function Login() {
-  const classes = useStyles();
+const validationSchema = Yup.object().shape({
 
+    email: Yup.string()
+    .email("Tù correo es incorrecto")
+    .required("Por favor ingrese su usuario"),
+});
+
+const Login=()=> {
+  const [formValues, setFormValues] = useState();
+  const [showComponent, setShowComponent]=useState(false);
+
+  const accion=()=>{
+    setShowComponent(true)
+  
+  
+}
+if(showComponent==true){
+  return <Redirect to="/"/>
+}
   return (
-    <Container component="main" maxWidth="xs">
-      <CssBaseline />
-      <div className={classes.paper}>
-        <Avatar className={classes.avatar}>
-          <LockOutlinedIcon />
-        </Avatar>
-        <Typography component="h1" variant="h5">
-         Ingresar
-        </Typography>
-        <form className={classes.form} noValidate>
-          <TextField
-            variant="outlined"
-            margin="normal"
-            required
-            fullWidth
-            id="email"
-            label="Correo"
-            name="email"
-            autoComplete="email"
-            autoFocus
-          />
-          <TextField
-            variant="outlined"
-            margin="normal"
-            required
-            fullWidth
-            name="password"
-            label="Contraseña"
-            type="password"
-            id="password"
-            autoComplete="current-password"
-          />
-          
-        <Link to="/sabiasque">  
-        <Button
-            type="submit"
-            fullWidth
-            variant="contained"
-            color="primary"
-            className={classes.submit}
-          >
-            Ingresar
-          </Button></Link>
-          <Grid container>
-            <Grid item xs>
-              <Link href="#" variant="body2">
-                Olvido su contraseña?
-              </Link>
-            </Grid>
-            <Grid item>
-            
-            </Grid>
-          </Grid>
-        </form>
-      </div>
+    <PageWrapper>
       
-    </Container>
+      <Formik
+        initialValues={{
+          email: "",
+          password: ""
+        }}
+        validate={(values) => {
+          const errors = {};
+
+          
+         
+         
+          // We need a valid password
+          if (!values.password) errors.password = "La contraseña es requerida";
+          else if (`${values.password}`.length < 7)
+            errors.password =
+              "La contraseñaes de minimo 7 caracteres";
+
+          console.log({ values, errors });
+
+          return errors;
+        }}
+        validationSchema={validationSchema}
+        onSubmit={(values, actions) => {
+          console.log(values);
+          setFormValues(values);
+
+          const timeOut = setTimeout(() => {
+            actions.setSubmitting(false);
+
+            clearTimeout(timeOut);
+          }, 1000);
+        }}
+      >
+        {({
+          values,
+          errors,
+          touched,
+          handleSubmit,
+          isSubmitting,
+          isValidating,
+          isValid
+        }) => {
+          return (
+            <>
+              <Form name="contact" method="post" onSubmit={handleSubmit}>
+                <center><h3>Iniciar Sesiòn</h3></center>
+                <Label htmlFor="email">
+                 
+                 <Input
+                  
+                   name="email"
+                   autoCapitalize="off"
+                   autoCorrect="off"
+                   autoComplete="email"
+                   placeholder="Correo"
+                   valid={touched.email && !errors.email}
+                   error={touched.email && errors.email}
+                 />
+               </Label>
+               <ErrorMessage name="email">
+                 {msg => (
+                   <StyledInlineErrorMessage>{msg}</StyledInlineErrorMessage>
+                 )}
+               </ErrorMessage>
+         
+                
+                <Label htmlFor="password">
+                  Contraseña
+                  <Input
+                    type="password"
+                    name="password"
+                    autoCapitalize="off"
+                    autoCorrect="off"
+                    autoComplete="email"
+                    placeholder="Contraseña"
+                    valid={touched.password && !errors.password}
+                    error={touched.password && errors.password}
+                  />
+                </Label>
+                <ErrorMessage name="password">
+                  {msg => (
+                    <StyledInlineErrorMessage>{msg}</StyledInlineErrorMessage>
+                  )}
+                </ErrorMessage>
+                
+                <Submit type="submit" onClick={accion} disabled={!isValid || isSubmitting}>
+               {isSubmitting ? `Registrando...` : `Registrarme`}
+                </Submit>
+               
+              </Form>
+
+              
+            </>
+          );
+        }}
+      </Formik>
+    </PageWrapper>
   );
 }
-  
+
+export default Login;
