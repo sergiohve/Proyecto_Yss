@@ -13,14 +13,16 @@ import {
 } from "./formik/styles";
 
 
+import './StyleLogin.css'; 
+import Recurso440 from '../assets/projects_images/Recurso 440.png'
 
 
 
 const validationSchema = Yup.object().shape({
 
     email: Yup.string()
-    .email("Tù correo es incorrecto")
-    .required("Por favor ingrese su usuario"),
+    .email("Tù rut es incorrecto")
+    .required("Por favor ingrese su Rut"),
 });
 
 const Login=()=> {
@@ -33,10 +35,10 @@ const Login=()=> {
   
 }
 if(showComponent==true){
-  return <Redirect to="/"/>
+  return <Redirect to="/mascercadeti"/>
 }
   return (
-    <PageWrapper>
+    <PageWrapper className="formu">
       
       <Formik
         initialValues={{
@@ -83,7 +85,7 @@ if(showComponent==true){
           return (
             <>
               <Form name="contact" method="post" onSubmit={handleSubmit}>
-                <center><h3>Iniciar Sesiòn</h3></center>
+              <img src={Recurso440} alt="avatar" className="logologin" />
                 <Label htmlFor="email">
                  
                  <Input
@@ -91,10 +93,11 @@ if(showComponent==true){
                    name="email"
                    autoCapitalize="off"
                    autoCorrect="off"
-                   autoComplete="email"
-                   placeholder="Correo"
+                   autoComplete="rut"
+                   placeholder="RUT"
                    valid={touched.email && !errors.email}
                    error={touched.email && errors.email}
+                  
                  />
                </Label>
                <ErrorMessage name="email">
@@ -105,7 +108,7 @@ if(showComponent==true){
          
                 
                 <Label htmlFor="password">
-                  Contraseña
+                 
                   <Input
                     type="password"
                     name="password"
@@ -123,8 +126,8 @@ if(showComponent==true){
                   )}
                 </ErrorMessage>
                 
-                <Submit type="submit" onClick={accion} disabled={!isValid || isSubmitting}>
-               {isSubmitting ? `Registrando...` : `Registrarme`}
+                <Submit type="submit" className="button" style={{width: "140px", marginRight: "auto", marginLeft: "auto", background: "#004364"}} onClick={accion} disabled={!isValid || isSubmitting}>
+               {isSubmitting ? `Ingresando...` : `Ingresar`}
                 </Submit>
                
               </Form>

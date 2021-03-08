@@ -82,13 +82,13 @@ const useStyles = makeStyles((theme) => ({
   },
   link: {
     
-    width: "70px",
-    paddingBottom:"-10px",
+    width: "120px",
+    marginTop: "30px",
     marginRight: "25px",
   },
   linkkk: {
     width: "100px",
-    paddingBottom: "14px",
+   
   },
   salir: {
     textAlign: "center",
@@ -99,9 +99,12 @@ const useStyles = makeStyles((theme) => ({
 
   },
   ambulancia: {
-    marginLeft: "80px",
+    marginLeft: "50px",
     width: "140px",
     paddingBottom:"130px",
+  },
+  nombre: {
+   fontWeight: "bold",
   },
 }));
 
@@ -182,8 +185,9 @@ export default function MasCercadeti() {
             aria-label="open drawer"
           >
              <IconButton  color="inherit">
-            <Link to="/#" className={classes.linkkk}><img src={Recurso138} alt="avatar" className="sidebar__avr" /></Link>
-            <Link to="/#" className={classes.ambulancia}><img src={Recurso136} alt="avatar" className="sidebar__avr" /></Link>
+             <Link to="/" ><img src={Recurso133} alt="avatar" className={classes.link} /><br/><p  className={classes.nombre}>Sergio Herrera</p></Link>
+           
+           
             </IconButton>
           </IconButton>
         
@@ -192,13 +196,14 @@ export default function MasCercadeti() {
           <div className={classes.sectionDesktop}>
             
             <IconButton aria-label="show 17 new notifications" color="inherit">
-             <img src={Recurso131} alt="avatar" className={classes.linkk} />
+            <img src={Recurso136} alt="avatar" className={classes.ambulancia} />
+          
     
             </IconButton>
-            
-            <Link to="/" ><img src={Recurso133} alt="avatar" className={classes.link} /><br/><img src={Recurso132} className={classes.link} alt="avatar" /></Link>
-              
-            
+            <IconButton aria-label="show 17 new notifications" color="inherit">
+           
+            <Link to="/#" className={classes.linkkk}><img src={Recurso138} alt="avatar" className="sidebar__avr" /></Link>
+            </IconButton>
           </div>
           <div className={classes.sectionMobile}>
             <IconButton
@@ -217,7 +222,7 @@ export default function MasCercadeti() {
       {renderMenu}
     </div>
       
-      <div className="container app__container">
+      <div className="container app__container" style={{marginTop: "40px"}}>
         
         <div className="row app__row">
          <div className="col-lg-8 col-sm-12">
@@ -281,7 +286,7 @@ export default function MasCercadeti() {
          </div>
           <div className="col-lg-8 col-sm-12">
         
-        <Contenido />
+      
         </div>
          <div className="col-lg-12 col-sm-12">
          
