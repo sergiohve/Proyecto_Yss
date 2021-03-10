@@ -10,7 +10,7 @@ const useStyles = makeStyles({
   root: {
     width: "100%",
     marginBottom: "35px",
-   
+   marginTop: "30px",
   },
   imgTitulo: {
      width: "100%",

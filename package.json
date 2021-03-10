@@ -5,6 +5,8 @@
   "dependencies": {
     "@material-ui/core": "^4.11.3",
     "@material-ui/icons": "^4.11.2",
+    "axios": "^0.21.1",
+    "bootstrap": "^4.6.0",
     "cra-template": "1.0.3",
     "formik": "^2.2.6",
     "framer-motion": "^2.4.3-beta.2",

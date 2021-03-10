@@ -2,7 +2,7 @@ import React from 'react'
 import Sidebar from '../components/Sidebar'
 
 import Footer from '../components/Footer';
-
+import Carrusel from '../components/Carrusel';
 import {  makeStyles } from '@material-ui/core/styles';
 import { Link } from 'react-router-dom';
 import AppBar from '@material-ui/core/AppBar';
@@ -32,6 +32,7 @@ import Recurso124 from '../assets/projects_images/Recurso 124.png'
 import Bannerscarrusel03 from '../assets/projects_images/Banners carrusel-03.png'
 import Recurso142 from '../assets/projects_images/Recurso 142.png'
 import Recurso600 from '../assets/projects_images/Recurso 600.png'
+import Recurso108 from '../assets/projects_images/Recurso 108.png'
 const useStyles = makeStyles((theme) => ({
   grow: {
     flexGrow: 1,
@@ -201,7 +202,7 @@ export default function MasCercadeti() {
             </IconButton>
             <IconButton aria-label="show 17 new notifications" color="inherit">
            
-            <Link to="/#" className={classes.linkkk}><img src={Recurso138} alt="avatar" className="sidebar__avr" /></Link>
+         <img src={Recurso138} alt="avatar"className={classes.linkkk} />
             </IconButton>
           </div>
           <div className={classes.sectionMobile}>
@@ -224,15 +225,15 @@ export default function MasCercadeti() {
       <div className="container app__container" style={{marginTop: "40px"}}>
         
         <div className="row ">
-         <div className="col-lg-8 col-sm-12">
-          <Link to="/cumpleaños" className="link"><img src={Bannerscarrusel03} alt="avatar" className="sidebar__avr" /></Link>
+         <div className="col-lg-8 col-md-12 col-sm-12" >
+         <Carrusel />
          </div>
-         <div className="col-lg-4 col-sm-12">
+         <div className="col-lg-4 col-md-12 col-sm-12">
           <Link to="/cumpleaños" className="link"><img src={Recurso121} alt="avatar" className="sidebar__avr" style={{height: "233px"}} /></Link>
          </div>
          </div>
          <div className="row ">
-          <div className="col-lg-4 col-sm-12">
+          <div className="col-lg-4 col-md-12 col-sm-12">
            
 
           <div className="sidar">
@@ -254,16 +255,14 @@ export default function MasCercadeti() {
                 <Link to="/nuevosingresos" className="link"> <img src={Recurso127} alt="avatar" className="sidebar__avr" /></Link>
                 </div>
             
-                <div className="sidebar__item sidebar__resume">
-                <Link to="/nacimientos" className="link"><img src={Recurso126} alt="avatar" className="sidebar__avr" /></Link>
-                </div>
-            
                
-                
-            
                 <div className="sidebar__item sidebar__resume">
                 <Link to="/cumpleaños" className="link"><img src={Recurso129} alt="avatar" className="sidebar__avr" /></Link>
                 </div>
+                 <div className="sidebar__item sidebar__resume">
+                <Link to="/Buzondesugerencias" className="link"><img src={Recurso108} alt="avatar" className="sidebar__avr" /></Link>
+                </div>
+            
             
                 
             
@@ -275,36 +274,36 @@ export default function MasCercadeti() {
             
            </div>
         </div>
-         <div className="col-lg-4 col-sm-12">
+         <div className="col-lg-4 col-md-12 col-sm-12">
          <h3 className="titulo_cerca">Reconocimiento Apple</h3>
          <Link to="/reconocimientoapple" className="link"> <img src={Recurso142} alt="avatar" className="img_cerca" /></Link>
 
          </div>
-          <div className="col-lg-4 col-sm-12">
+          <div className="col-lg-4 col-md-12 col-sm-12">
           <h3 className="titulo_cercaa">Capacitación</h3>
           <Link to="/capacitacion" className="link"><img src={Recurso599} alt="avatar" className="img_cercaa" /></Link>
 
          </div>
          </div>
          <div className="row">
-         <div className="col-lg-4 col-sm-12">
+         <div className="col-lg-4 col-md-12 col-sm-12">
         
-         <img src={Recurso124} alt="avatar" className="img_cercaaa" />
+        <Link to="/Galeria" className="link"> <img src={Recurso124} alt="avatar" className="img_cercaaa" /></Link>
          </div>
-         <div className="col-lg-4 col-sm-12">
+         <div className="col-lg-4 col-md-12 col-sm-12">
          <h3 className="titulo_cercaaa">Beneficios</h3>
-       <img src={Recurso598} alt="avatar"  className="img_cercaaaa" />
+         <Link to="/Beneficios" className="link"><img src={Recurso598} alt="avatar"  className="img_cercaaaa" /></Link>
        </div>
-       <div className="col-lg-4 col-sm-12">
+       <div className="col-lg-4 col-md-12 col-sm-12">
        <h3 className="titulo_cercaaa">Seguridad y Prevención</h3>
-              <img src={Recurso600} alt="avatar"  className="img_cercaaaa" />
+             <Link to="/HSE" className="link">  <img src={Recurso600} alt="avatar"  className="img_cercaaaa" /></Link>
        </div>
        </div>
 
          
-         <div className="col-lg-12 col-sm-12">
+         <div className="col-lg-12 col-md-12 col-sm-12">
          
-         <Footer/>
+         <Footer />
         
          </div>
      </div>

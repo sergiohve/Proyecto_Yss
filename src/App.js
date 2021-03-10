@@ -13,6 +13,7 @@ import ReconocimientoApple from './pages/ReconocimientoApple';
 import Capacitacion from './pages/Capacitacion';
 import Beneficios from './pages/Beneficios';
 import HSE from './pages/HSE';
+import Buzondesugerencias from './pages/Buzondesugerencias';
 import Login from './pages/Login';
 
 
@@ -38,6 +39,7 @@ function App() {
                 <Route exact path="/capacitacion"  component={Capacitacion} />
                  <Route exact path="/beneficios"  component={Beneficios} />
                   <Route exact path="/hse"  component={HSE} />
+                   <Route exact path="/Busondesugerencias"  component={HSE} />
               <Route component={PaginaNoEncontrada}/>
              
                

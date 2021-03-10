@@ -12,6 +12,7 @@ import Recurso124 from '../assets/projects_images/Recurso 124.png'
 import Recurso122 from '../assets/projects_images/Recurso 122.png'
 import Recurso120 from '../assets/projects_images/Recurso 120.png'
 import Recurso123 from '../assets/projects_images/Recurso 123.png'
+import Recurso108 from '../assets/projects_images/Recurso 108.png'
 
               
               
@@ -47,21 +48,17 @@ const Sidebar = () => {
                  <div className="sidebar__item sidebar__resume">
                 <Link to="/nuevosingresos" className="link"> <img src={Recurso127} alt="avatar" className="sidebar__avr" /></Link>
                 </div>
-            
-                <div className="sidebar__item sidebar__resume">
-                <Link to="/nacimientos" className="link"><img src={Recurso126} alt="avatar" className="sidebar__avr" /></Link>
-                </div>
-            
-               
-                
-            
+
                 <div className="sidebar__item sidebar__resume">
                 <Link to="/cumpleaños" className="link"><img src={Recurso129} alt="avatar" className="sidebar__avr" /></Link>
                 </div>
+                 <div className="sidebar__item sidebar__resume">
+                <Link to="/Buzondesugerencias" className="link"><img src={Recurso108} alt="avatar" className="sidebar__avr" /></Link>
+                </div>
             
                 
             
-                <div className="row">
+        <div className="row">
          <div className="col-lg-10  col-md-12 col-sm-12">
           <Link to="/cumpleaños" className="link">  <img src={Recurso124} alt="avatar" className="sidebar_" /> <img src={Recurso123} alt="avatar" className="icon_flotante" /></Link>
          </div>
