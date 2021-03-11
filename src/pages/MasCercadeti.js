@@ -1,6 +1,4 @@
 import React from 'react'
-import Sidebar from '../components/Sidebar'
-
 import Footer from '../components/Footer';
 import Carrusel from '../components/Carrusel';
 import {  makeStyles } from '@material-ui/core/styles';
@@ -8,31 +6,33 @@ import { Link } from 'react-router-dom';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
-
 import Menu from '@material-ui/core/Menu';
-
 import AccountCircle from '@material-ui/icons/AccountCircle';
-
 import MoreIcon from '@material-ui/icons/MoreVert';
 import Recurso133 from '../assets/projects_images/Recurso 133.png';
 import Recurso598 from '../assets/projects_images/Recurso 598.png'
 import Recurso138 from '../assets/projects_images/Recurso 138.png'
-
 import Recurso136 from '../assets/projects_images/Recurso 136.png'
-
 import Recurso121 from '../assets/projects_images/Recurso 121.png'
 import Recurso125 from '../assets/projects_images/Recurso 125.png'
-import Recurso126 from '../assets/projects_images/Recurso 126.png'
 import Recurso127 from '../assets/projects_images/Recurso 127.png'
 import Recurso128 from '../assets/projects_images/Recurso 128.png'
-import Recurso129 from '../assets/projects_images/Recurso 129.png'
 import Recurso130 from '../assets/projects_images/Recurso 130.png'
 import Recurso599 from '../assets/projects_images/Recurso 599.png'
 import Recurso124 from '../assets/projects_images/Recurso 124.png'
-import Bannerscarrusel03 from '../assets/projects_images/Banners carrusel-03.png'
+import Recurso71 from '../assets/projects_images/Recurso 71.png'
 import Recurso142 from '../assets/projects_images/Recurso 142.png'
 import Recurso600 from '../assets/projects_images/Recurso 600.png'
 import Recurso108 from '../assets/projects_images/Recurso 108.png'
+import Recurso402 from '../assets/projects_images/Recurso 402.png'
+import Recurso405 from '../assets/projects_images/Recurso 405.png'
+import Recurso123 from '../assets/projects_images/Recurso 123.png'
+import Recurso120 from '../assets/projects_images/Recurso 120.png'
+import Recurso114 from '../assets/projects_images/Recurso 114.png'
+import Recurso555 from '../assets/projects_images/Recurso 555.png'
+import Recurso556 from '../assets/projects_images/Recurso 556.png'
+
+import Recurso558 from '../assets/projects_images/Recurso 558.png'
 const useStyles = makeStyles((theme) => ({
   grow: {
     flexGrow: 1,
@@ -229,7 +229,7 @@ export default function MasCercadeti() {
          <Carrusel />
          </div>
          <div className="col-lg-4 col-md-12 col-sm-12">
-          <Link to="/cumpleaños" className="link"><img src={Recurso121} alt="avatar" className="sidebar__avr" style={{height: "233px"}} /></Link>
+          <Link to="/Noticias" className="link"><img src={Recurso120} alt="avatar" className="bocina"  /><img src={Recurso121} alt="avatar" className="sidebar__avr" style={{height: "233px"}} /><img src={Recurso402} alt="avatar" className="galeria"  /></Link>
          </div>
          </div>
          <div className="row ">
@@ -257,7 +257,7 @@ export default function MasCercadeti() {
             
                
                 <div className="sidebar__item sidebar__resume">
-                <Link to="/cumpleaños" className="link"><img src={Recurso129} alt="avatar" className="sidebar__avr" /></Link>
+                <Link to="/Nacimientos" className="link"><img src={Recurso71} alt="avatar" className="sidebar__avr" /></Link>
                 </div>
                  <div className="sidebar__item sidebar__resume">
                 <Link to="/Buzondesugerencias" className="link"><img src={Recurso108} alt="avatar" className="sidebar__avr" /></Link>
@@ -276,27 +276,27 @@ export default function MasCercadeti() {
         </div>
          <div className="col-lg-4 col-md-12 col-sm-12">
          <h3 className="titulo_cerca">Reconocimiento Apple</h3>
-         <Link to="/reconocimientoapple" className="link"> <img src={Recurso142} alt="avatar" className="img_cerca" /></Link>
+         <Link to="/reconocimientoapple" className="link"><img src={Recurso114} alt="avatar" className="manzana" /><img src={Recurso142} alt="avatar" className="img_cerca" /></Link>
 
          </div>
           <div className="col-lg-4 col-md-12 col-sm-12">
           <h3 className="titulo_cercaa">Capacitación</h3>
-          <Link to="/capacitacion" className="link"><img src={Recurso599} alt="avatar" className="img_cercaa" /></Link>
+          <Link to="/capacitacion" className="link"><img src={Recurso555} alt="avatar" className="manzana" /><img src={Recurso599} alt="avatar" className="img_cercaa" /></Link>
 
          </div>
          </div>
          <div className="row">
          <div className="col-lg-4 col-md-12 col-sm-12">
         
-        <Link to="/Galeria" className="link"> <img src={Recurso124} alt="avatar" className="img_cercaaa" /></Link>
+        <Link to="/Galeria" className="link"><img src={Recurso123} alt="avatar" className="camara"  /> <img src={Recurso124} alt="avatar" className="img_cercaaa" /><img src={Recurso405} alt="avatar" className="noticias"  /></Link>
          </div>
          <div className="col-lg-4 col-md-12 col-sm-12">
          <h3 className="titulo_cercaaa">Beneficios</h3>
-         <Link to="/Beneficios" className="link"><img src={Recurso598} alt="avatar"  className="img_cercaaaa" /></Link>
+         <Link to="/Beneficios" className="link"><img src={Recurso556} alt="avatar" className="manzana" /><img src={Recurso598} alt="avatar"  className="img_cercaaaa" /></Link>
        </div>
        <div className="col-lg-4 col-md-12 col-sm-12">
-       <h3 className="titulo_cercaaa">Seguridad y Prevención</h3>
-             <Link to="/HSE" className="link">  <img src={Recurso600} alt="avatar"  className="img_cercaaaa" /></Link>
+       <h4 className="titulo_cercaaa">HSE-Seguridad y Prevención</h4>
+             <Link to="/HSE" className="link"><img src={Recurso558} alt="avatar" className="manzana" />  <img src={Recurso600} alt="avatar"  className="img_cercaaaa" /></Link>
        </div>
        </div>
 

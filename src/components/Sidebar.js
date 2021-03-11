@@ -33,26 +33,26 @@ const Sidebar = () => {
          </div>
            
             
-                 <div className="sidebar__item sidebar__resume">
+                 <div className="sidebar__item sidebar__resume sidebarbar">
                <Link to="/sabiasque" className="link"> <img src={Recurso130} alt="avatar" className="sidebar__avr" /></Link>
                 </div>
 
-                <div className="sidebar__item sidebar__resume">
+                <div className="sidebar__item sidebar__resume sidebarbar">
                 <Link to="/cumpleaños" className="link"><img src={Recurso125} alt="avatar" className="sidebar__avr" /></Link>
                 </div>
 
-                <div className="sidebar__item sidebar__resume">
+                <div className="sidebar__item sidebar__resume sidebarbar">
                 <Link to="/nuestroequipo" className="link"><img src={Recurso128} alt="avatar" className="sidebar__avr" /></Link>
                 </div>
             
-                 <div className="sidebar__item sidebar__resume">
+                 <div className="sidebar__item sidebar__resume sidebarbar">
                 <Link to="/nuevosingresos" className="link"> <img src={Recurso127} alt="avatar" className="sidebar__avr" /></Link>
                 </div>
 
-                <div className="sidebar__item sidebar__resume">
+                <div className="sidebar__item sidebar__resume sidebarbar">
                 <Link to="/cumpleaños" className="link"><img src={Recurso129} alt="avatar" className="sidebar__avr" /></Link>
                 </div>
-                 <div className="sidebar__item sidebar__resume">
+                 <div className="sidebar__item sidebar__resume sidebarbar">
                 <Link to="/Buzondesugerencias" className="link"><img src={Recurso108} alt="avatar" className="sidebar__avr" /></Link>
                 </div>
             

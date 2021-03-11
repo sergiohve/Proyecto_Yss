@@ -33,13 +33,13 @@ function App() {
               <Route exact path="/nuevosingresos"  component={NuevosIngresos} />
               <Route exact path="/nuestroequipo"  component={NuestroEquipo} />
               <Route exact path="/mascercadeti"  component={MasCercadeti} />
-               <Route exact path="/noticias"  component={Noticias} />
-               <Route exact path="/galeria"  component={Galeria} />
-               <Route exact path="/reconocimientoapple"  component={ReconocimientoApple} />
-                <Route exact path="/capacitacion"  component={Capacitacion} />
-                 <Route exact path="/beneficios"  component={Beneficios} />
-                  <Route exact path="/hse"  component={HSE} />
-                   <Route exact path="/Busondesugerencias"  component={HSE} />
+              <Route exact path="/noticias"  component={Noticias} />
+              <Route exact path="/galeria"  component={Galeria} />
+              <Route exact path="/reconocimientoapple"  component={ReconocimientoApple} />
+              <Route exact path="/capacitacion"  component={Capacitacion} />
+              <Route exact path="/beneficios"  component={Beneficios} />
+              <Route exact path="/hse"  component={HSE} />
+              <Route exact path="/Busondesugerencias"  component={Buzondesugerencias} />
               <Route component={PaginaNoEncontrada}/>
              
                

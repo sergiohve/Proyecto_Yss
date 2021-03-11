@@ -22,7 +22,7 @@ body {
 }
 .icon_flotante{
     position: absolute;
-    margin-top: -205px;
+    margin-top: -215px;
     width: 50px;
     margin-left: 10px;
     
@@ -77,12 +77,52 @@ a:hover {
 }
 .sidebar_r{
     height: 170px;
-    margin-top: 40px;
+    margin-top: 54px;
      width: 32px;
 }
+.galeria{
+    position: absolute;
+    height: 233px;
+    margin-left: -48px;
+}
+.noticias{
+    position: absolute;
+    height: 232px;
+    margin-left: -46px;
+    margin-top: 15px;
+}
+.imgcontent{
+    height: 310px;
+    width: 370px;
+    margin-right: 50px;
+}
+.contenidoo{
+    text-align: justify;
+    color: #041b4d;
+    
+}
+
+.camara{
+    position: absolute;
+    width: 76px;
+    margin-left: 16px;
+    margin-top: 16px;
+}
+.bocina{
+    position: absolute;
+    width: 76px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.manzana{
+    position: absolute;
+    width: 76px;
+    margin-left: 4px;
+}
+
 
 .sidebar__avatar {
-    height: 250px;
+    height: 280px;
     width: 250px;
   
     object-fit: contain;
@@ -106,6 +146,13 @@ a:hover {
     margin-top: 49px;
    
 }
+.imgContent{
+    width: 100%;
+    
+    height: 600px;
+   
+}
+
 
 .sidebar__icon {
     width: 25px;
@@ -125,9 +172,9 @@ a:hover {
 .sidebar__item {
     margin-bottom: 5px;
     padding-top: 5px;
-    height: 100%;
+    
     width: 100%;
-    font-size: 1.10rem;
+   
     
    
 }
@@ -154,14 +201,14 @@ a:hover {
 }
 .img_cerca{
     width: 400px;
-   height: 250px;
+   height: 255px;
     margin-top: -15px;
     margin-right: auto;
     margin-left: -25px;
 }
 .img_cercaa{
     width: 350px;
-    height: 230px;
+    height: 234px;
     margin-right: auto;
     margin-left: auto;
     margin-top: -4px;
@@ -170,9 +217,10 @@ a:hover {
 }
 .img_cercaaa{
     width: 330px;
-    height: 227px;
+    height: 233px;
     margin-right: auto;
     margin-left: 10px;
+    margin-top: 15px;
    
    
 }
@@ -198,11 +246,12 @@ a:hover {
    
 }
 .titulo_cercaaa{
-    margin-top: -20px;
+    
     color:#032342;
     font-weight: bold;
     margin-bottom: 10px;
 }
+
 .sidebar__email {
     background-image: linear-gradient(to right bottom, #00F260, #0575E6);
 
@@ -517,12 +566,16 @@ a:hover {
     }
     .icon_flotante{
         position: absolute;
-      
         width: 70px;
-        margin-left: -350px;
-        margin-top: 30px;
-       
+        margin-left: -300px;
+        margin-top: 20px; 
+    }
+  
+    .noticias{
+        position: absolute;
         
+       margin-left: 300px;
+        margin-top: -232px;
     }
     .sidebar__avatar {
         height: 250px;
@@ -532,10 +585,10 @@ a:hover {
        
     }
     .sidebar_r{
-       height: 250px;
+       height: 213px;
         width: 50px;
-        margin-left:315px;
-         margin-top: -250px;
+        margin-left:267px;
+         margin-top: -232px;
          position: absolute;
     }
     .sidebar_{
@@ -545,10 +598,10 @@ a:hover {
        
     }
     .sideb{
-        height: 235px;
-        margin-top: -248px;
+        height: 202px;
+        margin-top: -231px;
          width: 50px;
-         margin-left: 314px;
+         margin-left: 270px;
          position: absolute;
     }
     .contenido{

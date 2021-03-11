@@ -8,7 +8,7 @@ const useStyles = makeStyles({
   root: {
     width: "100%",
     minHeight: 'calc(792px - 200px)',
-    height: 'calc(100% - 200px)',
+    height: 'calc(100% - 100px)',
     marginBottom: "30px",
     background: "#b8babc",
     
@@ -17,7 +17,7 @@ const useStyles = makeStyles({
   
 });
 
-export default function Contenido({titulo}) {
+export default function Contenido({titulo, contenido}) {
   const classes = useStyles();
  
 
@@ -26,16 +26,7 @@ export default function Contenido({titulo}) {
       <h1>{titulo}</h1>
     <Card className={classes.root}>
       <CardContent>
-       
-
-
-
-
-
-
-
-
-
+        {contenido}
 
 
       </CardContent>
