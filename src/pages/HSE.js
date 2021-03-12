@@ -6,7 +6,9 @@ import Header from '../components/Header';
 import Contenido from '../components/Contenido';
 import Recurso385 from '../assets/projects_images/Recurso 385.png'
 import Recurso604 from '../assets/projects_images/Recurso 604.png'
- 
+import Recurso501 from '../assets/projects_images/Recurso 501.png'
+
+ const mano= <img src={Recurso501} alt="avatar" />
  const img=<img src={Recurso385} alt="avatar" className="imgTitulo" />
  const imgcontent= <img src={Recurso604} alt="avatar" className="imgcontent" />
  const content=<div className="contenidoo">
@@ -37,16 +39,10 @@ import Recurso604 from '../assets/projects_images/Recurso 604.png'
              <li>Estándares de ISS para el Puesto de Trabajo.</li>
              <li>Responsabilidad Empresarial.</li>
            </ul>
-         
-         
-        
-         
-        
-        
          </h5>
          <h5>El valor de continuar mejorando el clima laboral, es una de nuestras prioridades.</h5>
        
-         <Link to="/" className="link">Puedes leer en detalle el codigo de conducta aquí</Link>
+         <Link to="/" className="link">Puedes leer en detalle el codigo de conducta aquí{mano}</Link>
        
        
        </div>;

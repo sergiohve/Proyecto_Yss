@@ -17,7 +17,7 @@ const useStyles = makeStyles({
   
 });
 
-export default function Contenido({titulo, contenido}) {
+export default function Contenido({titulo, contenido, img1, img2, img3, noti1, noti2, noti3, noti4}) {
   const classes = useStyles();
  
 
@@ -26,7 +26,18 @@ export default function Contenido({titulo, contenido}) {
       <h1>{titulo}</h1>
     <Card className={classes.root}>
       <CardContent>
-        {contenido}
+         {contenido}
+        {img1}
+        {img2}
+        {img3}
+        {noti1}
+        <hr/>
+         {noti2}
+          <hr/>
+          {noti3}
+           <hr/>
+           {noti4}
+        
 
 
       </CardContent>
