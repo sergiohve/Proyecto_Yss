@@ -260,7 +260,7 @@ export default function MasCercadeti() {
                 <Link to="/Nacimientos" className="link"><img src={Recurso71} alt="avatar" className="sidebar__avr" /></Link>
                 </div>
                  <div className="sidebar__item sidebar__resume">
-                <Link to="/Buzondesugerencias" className="link"><img src={Recurso108} alt="avatar" className="sidebar__avr" /></Link>
+                <Link to="/buzondesugerencias" className="link"><img src={Recurso108} alt="avatar" className="sidebar__avr" /></Link>
                 </div>
             
             

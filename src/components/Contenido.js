@@ -10,7 +10,7 @@ const useStyles = makeStyles({
     minHeight: 'calc(792px - 200px)',
     height: 'calc(100% - 100px)',
     marginBottom: "30px",
-    background: "#b8babc",
+    background: "#eeeeef",
     
     
   },
@@ -31,11 +31,11 @@ export default function Contenido({titulo, contenido, img1, img2, img3, noti1, n
         {img2}
         {img3}
         {noti1}
-        <hr/>
+       
          {noti2}
-          <hr/>
+         
           {noti3}
-           <hr/>
+           
            {noti4}
         
 

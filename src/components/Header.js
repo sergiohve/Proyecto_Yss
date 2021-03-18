@@ -86,6 +86,9 @@ const useStyles = makeStyles((theme) => ({
     width: "140px",
     paddingBottom:"130px",
   },
+  ambu: {
+    width: "130px",
+  },
 }));
 
 export default function Header() {
@@ -164,8 +167,8 @@ export default function Header() {
             aria-label="open drawer"
           >
              <IconButton  color="inherit">
-            <Link to="/#" className={classes.linkkk}><img src={Recurso138} alt="avatar" className="sidebar__avr" /></Link>
-            <Link to="/#" className={classes.ambulancia}><img src={Recurso136} alt="avatar" className="sidebar__avr" /></Link>
+            <Link to="/#" className={classes.linkkk}><img src={Recurso138} className={classes.linkkk} /></Link>
+            <Link to="/#" className={classes.ambulancia}><img src={Recurso136} className={classes.ambu} /></Link>
             </IconButton>
           </IconButton>
         

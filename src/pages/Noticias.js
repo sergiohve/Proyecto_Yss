@@ -13,9 +13,9 @@ import Recurso412 from '../assets/projects_images/Recurso 412.png'
 
 
  const img=<img src={Recurso412} alt="avatar" className="imgTitulo" />
-  const noti1=<img src={Recurso497} alt="avatar" className="noti1" />
- const noti2=<img src={Recurso498} alt="avatar" className="img2" />
- const noti3=<img src={Recurso499} alt="avatar" className="img3" />
+  const noti1=<div><img src={Recurso497} alt="avatar" className="noti1" /><hr/></div>
+ const noti2=<div><img src={Recurso498} alt="avatar" className="img2" /><hr/></div>
+ const noti3=<div><img src={Recurso499} alt="avatar" className="img3" /><hr/></div>
  const noti4=<img src={Recurso500} alt="avatar" className="img3" />
 export default function Cumpleaños() {
     return (

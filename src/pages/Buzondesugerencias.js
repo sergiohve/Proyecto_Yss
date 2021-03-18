@@ -1,12 +1,13 @@
 import React from 'react'
 import Sidebar from '../components/Sidebar'
-
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Contenido from '../components/Contenido';
-import Recurso362 from '../assets/projects_images/Recurso 362.png'
+import Recurso117 from '../assets/projects_images/Recurso 117.png'
+import Recurso542 from '../assets/projects_images/Recurso 542.png'
  
- const img=<img src={Recurso362} alt="avatar" className="imgTitulo" />
+ const img=<img src={Recurso117} alt="avatar" className="imgTitulo" />
+ const content=<img src={Recurso542} alt="avatar" className="imgTitulo" />
 export default function Buzondesugerencias() {
     return (
         <div className="app">
@@ -22,7 +23,7 @@ export default function Buzondesugerencias() {
           </div>
           <div className="col-lg-9 col-sm-12">
         
-        <Contenido titulo={img}/>
+        <Contenido titulo={img} contenido={content}/>
         </div>
          <div className="col-lg-12 col-sm-12">
          

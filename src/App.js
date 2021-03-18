@@ -14,6 +14,7 @@ import Capacitacion from './pages/Capacitacion';
 import Beneficios from './pages/Beneficios';
 import HSE from './pages/HSE';
 import Buzondesugerencias from './pages/Buzondesugerencias';
+import Bienestar from './pages/Bienestar';
 import Login from './pages/Login';
 
 
@@ -27,19 +28,20 @@ function App() {
           
           <Switch >
               <Route exact path="/"  component={Login} />
-              <Route exact path="/sabiasque"  component={SabiasQue} />
-              <Route exact path="/cumpleaños"  component={Cumpleaños} />
-              <Route exact path="/nacimientos"  component={Nacimientos} />
-              <Route exact path="/nuevosingresos"  component={NuevosIngresos} />
-              <Route exact path="/nuestroequipo"  component={NuestroEquipo} />
-              <Route exact path="/mascercadeti"  component={MasCercadeti} />
-              <Route exact path="/noticias"  component={Noticias} />
-              <Route exact path="/galeria"  component={Galeria} />
-              <Route exact path="/reconocimientoapple"  component={ReconocimientoApple} />
-              <Route exact path="/capacitacion"  component={Capacitacion} />
-              <Route exact path="/beneficios"  component={Beneficios} />
-              <Route exact path="/hse"  component={HSE} />
-              <Route exact path="/Busondesugerencias"  component={Buzondesugerencias} />
+              <Route  path="/sabiasque"  component={SabiasQue} />
+              <Route  path="/cumpleaños"  component={Cumpleaños} />
+              <Route  path="/nacimientos"  component={Nacimientos} />
+              <Route  path="/nuevosingresos"  component={NuevosIngresos} />
+              <Route  path="/nuestroequipo"  component={NuestroEquipo} />
+              <Route  path="/mascercadeti"  component={MasCercadeti} />
+              <Route  path="/noticias"  component={Noticias} />
+              <Route  path="/galeria"  component={Galeria} />
+              <Route  path="/reconocimientoapple"  component={ReconocimientoApple} />
+              <Route  path="/capacitacion"  component={Capacitacion} />
+              <Route  path="/beneficios"  component={Beneficios} />
+              <Route  path="/hse"  component={HSE} />
+              <Route  path="/buzondesugerencias"  component={Buzondesugerencias} />
+               <Route  path="/bienestar"  component={Bienestar} />
               <Route component={PaginaNoEncontrada}/>
              
                

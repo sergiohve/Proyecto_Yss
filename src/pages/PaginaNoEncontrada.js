@@ -18,7 +18,7 @@ export default function PaginaNoEncontrada() {
         <div className={classes.root}>
       
         
-        PaginaNoEncontrada
+        Pagina No Encontrada
        
     </div>
     )

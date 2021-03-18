@@ -1,4 +1,5 @@
 import React from 'react'
+
 import Sidebar from '../components/Sidebar'
 import { Link } from "react-router-dom";
 import Footer from '../components/Footer';
@@ -15,7 +16,7 @@ import Recurso496 from '../assets/projects_images/Recurso 496.png'
 
 
  const img=<img src={Recurso362} alt="avatar" className="imgTitulo" />
- const img1=<div><Link to="/"><img src={Recurso491} alt="avatar" className="img1" /><img src={Recurso496} alt="avatar" className="ben1" /></Link></div>
+ const img1=<div><Link to="/bienestar"><img src={Recurso491} alt="avatar" className="img1" /><img src={Recurso496} alt="avatar" className="ben1" /></Link></div>
  const img2=<div><Link to="/"><img src={Recurso492} alt="avatar" className="img2" /><img src={Recurso495} alt="avatar" className="ben2" /></Link></div>
  const img3=<div><Link to="/"><img src={Recurso493} alt="avatar" className="img3" /><img src={Recurso494} alt="avatar" className="ben3" /></Link></div>
  

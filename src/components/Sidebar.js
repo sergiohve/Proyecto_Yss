@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import Recurso121 from '../assets/projects_images/Recurso 121.png'
 import Recurso125 from '../assets/projects_images/Recurso 125.png'
-import Recurso126 from '../assets/projects_images/Recurso 126.png'
+import Recurso71 from '../assets/projects_images/Recurso 71.png'
 import Recurso127 from '../assets/projects_images/Recurso 127.png'
 import Recurso128 from '../assets/projects_images/Recurso 128.png'
 import Recurso129 from '../assets/projects_images/Recurso 129.png'
@@ -24,11 +24,11 @@ const Sidebar = () => {
     return (
         <div className="sidar">
         <div className="row">
-         <div className="col-lg-10  col-md-9 col-sm-9">
-          <Link to="/cumpleaños" className="link"> <img src={Recurso121} alt="avatar" className="sidebar__avatar" /><img src={Recurso120} alt="avatar" className="icon_flotante" /></Link>
+         <div className="col-lg-10  col-md-9 col-sm-8">
+          <Link to="/Noticias" className="link"> <img src={Recurso121} alt="avatar" className="sidebar__avatar" /><img src={Recurso120} alt="avatar" className="icon_flotante" /></Link>
          </div>
-         <div className="col-lg-2  col-md-3 col-sm-3">
-          <Link to="/" className="link"> <img src={Recurso119} alt="avatar" className="sidebar_r" /></Link>
+         <div className="col-lg-2  col-md-3 col-sm-4">
+          <Link to="/Noticias" className="link"> <img src={Recurso119} alt="avatar" className="sidebar_r" /></Link>
          </div>
          </div>
            
@@ -50,17 +50,17 @@ const Sidebar = () => {
                 </div>
 
                 <div className="sidebar__item sidebar__resume sidebarbar">
-                <Link to="/cumpleaños" className="link"><img src={Recurso129} alt="avatar" className="sidebar__avr" /></Link>
+                <Link to="/nacimientos" className="link"><img src={Recurso71} alt="avatar" className="sidebar__avr" /></Link>
                 </div>
                  <div className="sidebar__item sidebar__resume sidebarbar">
-                <Link to="/Buzondesugerencias" className="link"><img src={Recurso108} alt="avatar" className="sidebar__avr" /></Link>
+                <Link to="/buzondesugerencias" className="link"><img src={Recurso108} alt="avatar" className="sidebar__avr" /></Link>
                 </div>
             
                 
             
         <div className="row">
          <div className="col-lg-10  col-md-12 col-sm-12">
-          <Link to="/cumpleaños" className="link">  <img src={Recurso124} alt="avatar" className="sidebar_" /> <img src={Recurso123} alt="avatar" className="icon_flotante" /></Link>
+          <Link to="/cumpleaños" className="link">  <img src={Recurso124} alt="avatar" className="sidebar_" /> <img src={Recurso123} alt="avatar" className="icon_flotante1" /></Link>
          </div>
          <div className="col-lg-2  col-md-2 col-sm-2">
           <Link to="/" className="link"> <img src={Recurso122} alt="avatar" className="sideb" /></Link>
