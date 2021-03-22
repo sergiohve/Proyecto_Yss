@@ -254,7 +254,11 @@ a:hover {
    
 }
 .bienestar{
+<<<<<<< HEAD
    
+=======
+   width: 100%;
+>>>>>>> 747da2c3673f3fb89a19244ea350cad43c9ce635
 }
 
 
@@ -284,7 +288,7 @@ a:hover {
 }
 .sidebar__avr {
     width: 100%;
-    height: 40px;
+    height: 35px;
     
     
 }

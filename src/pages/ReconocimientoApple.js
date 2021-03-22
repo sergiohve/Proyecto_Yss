@@ -10,9 +10,12 @@ import Recurso511 from '../assets/projects_images/Recurso 511.png'
 import Recurso509 from '../assets/projects_images/Recurso 509.png'
 import Recurso510 from '../assets/projects_images/Recurso 510.png'
 import Recurso513 from '../assets/projects_images/Recurso 513.png'
+<<<<<<< HEAD
 import Recurso319 from '../assets/projects_images/Recurso 319.png'
 import Recurso515 from '../assets/projects_images/Recurso 515.png'
 import Recurso514 from '../assets/projects_images/Recurso 514.png'
+=======
+>>>>>>> 747da2c3673f3fb89a19244ea350cad43c9ce635
 
  
  const img=<img src={Recurso134} alt="avatar" className="imgTitulo" />
@@ -39,12 +42,36 @@ const [datos, setDatos]= useState([]);
  }
 const content=(
     <div>
+<<<<<<< HEAD
          <div className="row">
        <div className="col-lg-12 col-sm-12">
        <img src={Recurso512} alt="avatar" className="mantexto" />
        <img src={Recurso511} alt="avatar" className="manzana" />
       </div>
  </div>      
+=======
+                {
+                  datos.map(item =>(
+                    <div>
+                    <div className="row">
+                     <div className="col-lg-12 col-sm-12">
+
+                  
+                    <p key="item.id" style={{color:"#030037"}}><img style={{float:"right", width: "160px"}} hspace="5" vspace="5" src={Recurso511} /><div style={{textAlign:"justify"}}>{item.contenido}</div></p>
+                    </div>
+                    </div>
+                       <div style={{marginLeft: "300px", marginTop: "50px"}}>
+                       <Link> <img src={Recurso510} alt="avatar" style={{width: "200px", position: "absolute"}} />
+                       <img src={Recurso509} alt="avatar" style={{width: "200px", position: "absolute", marginTop: "5px"}}/>
+                       </Link>
+                       </div>
+                        <img src={Recurso513} alt="avatar" style={{width: "50px", marginLeft: "510px"}} />
+                    </div>
+
+
+                  ))
+                }
+>>>>>>> 747da2c3673f3fb89a19244ea350cad43c9ce635
 </div>
   )
 
