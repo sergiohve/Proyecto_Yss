@@ -1,15 +1,15 @@
 import React from 'react'
-import Footer from '../components/Footer';
-import Carrusel from '../components/Carrusel';
-import {  makeStyles } from '@material-ui/core/styles';
-import { Link } from 'react-router-dom';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import IconButton from '@material-ui/core/IconButton';
-import Menu from '@material-ui/core/Menu';
-import AccountCircle from '@material-ui/icons/AccountCircle';
-import MoreIcon from '@material-ui/icons/MoreVert';
-import Recurso133 from '../assets/projects_images/Recurso 133.png';
+import Footer from '../components/Footer'
+import Carrusel from '../components/Carrusel'
+import {  makeStyles } from '@material-ui/core/styles'
+import { Link } from 'react-router-dom'
+import AppBar from '@material-ui/core/AppBar'
+import Toolbar from '@material-ui/core/Toolbar'
+import IconButton from '@material-ui/core/IconButton'
+import Menu from '@material-ui/core/Menu'
+import AccountCircle from '@material-ui/icons/AccountCircle'
+import MoreIcon from '@material-ui/icons/MoreVert'
+import Recurso133 from '../assets/projects_images/Recurso 133.png'
 import Recurso598 from '../assets/projects_images/Recurso 598.png'
 import Recurso138 from '../assets/projects_images/Recurso 138.png'
 import Recurso136 from '../assets/projects_images/Recurso 136.png'
@@ -31,8 +31,13 @@ import Recurso120 from '../assets/projects_images/Recurso 120.png'
 import Recurso114 from '../assets/projects_images/Recurso 114.png'
 import Recurso555 from '../assets/projects_images/Recurso 555.png'
 import Recurso556 from '../assets/projects_images/Recurso 556.png'
+import Recurso137 from '../assets/projects_images/Recurso 137.png'
+
 
 import Recurso558 from '../assets/projects_images/Recurso 558.png'
+
+
+
 const useStyles = makeStyles((theme) => ({
   grow: {
     flexGrow: 1,
@@ -76,9 +81,27 @@ const useStyles = makeStyles((theme) => ({
       display: 'none',
     },
   },
+  mas: {
+   marginLeft: "200px",
+   marginBottom: "17px",
+  },
    linkk: {
     width: "290px",
     paddingBottom: "16px",
+  }, 
+  foot: {
+    width: "100%",
+    marginBottom: "35px",
+   marginTop: "30px",
+  },
+  imgTitulo: {
+     width: "100%",
+     
+  },
+  imgTitulo1:{
+    width: "100px",
+    display:"block",
+     margin:"auto",  
   },
   link: {
     
@@ -191,10 +214,10 @@ export default function MasCercadeti() {
             </IconButton>
           </IconButton>
         
-          
+           <h1 className={classes.mas}>MÁS CERCA DE TI</h1>
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
-            
+           
             <IconButton aria-label="show 17 new notifications" color="inherit">
             <img src={Recurso136} alt="avatar" className={classes.ambulancia} />
           
@@ -301,11 +324,19 @@ export default function MasCercadeti() {
        </div>
 
          
-         <div className="col-lg-12 col-md-12 col-sm-12">
+        <div className={classes.foot}>
+      
+     
+       <div className="col-lg-12 col-sm-12">
          
-         <Footer />
-        
+         <img src={Recurso137} alt="avatar" className={classes.imgTitulo} />
+         <img src={Recurso138} alt="avatar" className={classes.imgTitulo1}/>
          </div>
+         
+         
+       
+      
+    </div>
      </div>
     
      </div>

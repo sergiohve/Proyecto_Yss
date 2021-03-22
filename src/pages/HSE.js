@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import Sidebar from '../components/Sidebar'
 import { Link } from 'react-router-dom';
 import Footer from '../components/Footer';
@@ -7,6 +7,7 @@ import Contenido from '../components/Contenido';
 import Recurso385 from '../assets/projects_images/Recurso 385.png'
 import Recurso604 from '../assets/projects_images/Recurso 604.png'
 import Recurso501 from '../assets/projects_images/Recurso 501.png'
+import Recurso319 from '../assets/projects_images/Recurso 319.png'
 
  const mano= <img src={Recurso501} alt="avatar" />
  const img=<img src={Recurso385} alt="avatar" className="imgTitulo" />
@@ -48,6 +49,24 @@ import Recurso501 from '../assets/projects_images/Recurso 501.png'
        </div>;
   
 export default function Cumpleaños() {
+   const [datos, setDatos]= useState([]);
+ 
+
+ useEffect(() => {
+   
+   obtenerDatos()
+  
+  
+ }, [setDatos])
+
+ const obtenerDatos = async ()=>{
+   const data=await fetch("http://dev.love.cl:11337/sabias-que-contenidos");
+   const contentt= await data.json()
+   setDatos(contentt)
+   console.log(contentt)
+ }
+
+
     return (
         <div className="app">
        <Header/>
@@ -66,7 +85,7 @@ export default function Cumpleaños() {
         </div>
         <div className="col-lg-12 col-sm-12">
          
-         <Footer/>
+         <Footer imgFooter={Recurso319}/>
         
          </div>
      </div>

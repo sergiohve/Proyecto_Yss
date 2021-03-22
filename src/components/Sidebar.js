@@ -60,10 +60,10 @@ const Sidebar = () => {
             
         <div className="row">
          <div className="col-lg-10  col-md-12 col-sm-12">
-          <Link to="/cumpleaños" className="link">  <img src={Recurso124} alt="avatar" className="sidebar_" /> <img src={Recurso123} alt="avatar" className="icon_flotante1" /></Link>
+          <Link to="/galeria" className="link">  <img src={Recurso124} alt="avatar" className="sidebar_" /> <img src={Recurso123} alt="avatar" className="icon_flotante1" /></Link>
          </div>
          <div className="col-lg-2  col-md-2 col-sm-2">
-          <Link to="/" className="link"> <img src={Recurso122} alt="avatar" className="sideb" /></Link>
+          <Link to="/galeria" className="link"> <img src={Recurso122} alt="avatar" className="sideb" /></Link>
          </div>
          </div>
            

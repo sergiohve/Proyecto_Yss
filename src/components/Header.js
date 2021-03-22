@@ -15,6 +15,10 @@ import Recurso131 from '../assets/projects_images/Recurso 131.png'
 import Recurso138 from '../assets/projects_images/Recurso 138.png'
 import Recurso132 from '../assets/projects_images/Recurso 132.png'
 import Recurso136 from '../assets/projects_images/Recurso 136.png'
+import Recurso701 from '../assets/projects_images/Recurso 701.png'
+import Recurso702 from '../assets/projects_images/Recurso 702.png'
+import Recurso703 from '../assets/projects_images/Recurso 703.png'
+import Recurso704 from '../assets/projects_images/Recurso 704.png'
 
 const useStyles = makeStyles((theme) => ({
   grow: {
@@ -66,8 +70,8 @@ const useStyles = makeStyles((theme) => ({
   link: {
     
     width: "70px",
-    paddingBottom:"-10px",
     marginRight: "25px",
+    marginBottom: "20px",
   },
   linkkk: {
     width: "100px",
@@ -88,6 +92,10 @@ const useStyles = makeStyles((theme) => ({
   },
   ambu: {
     width: "130px",
+  },
+  salirr: {
+    width: "70px",
+     marginRight: "25px",
   },
 }));
 
@@ -167,8 +175,8 @@ export default function Header() {
             aria-label="open drawer"
           >
              <IconButton  color="inherit">
-            <Link to="/#" className={classes.linkkk}><img src={Recurso138} className={classes.linkkk} /></Link>
-            <Link to="/#" className={classes.ambulancia}><img src={Recurso136} className={classes.ambu} /></Link>
+         <img src={Recurso138} className={classes.linkkk} />
+            <Link  className={classes.ambulancia}><img src={Recurso136} className={classes.ambu} /></Link>
             </IconButton>
           </IconButton>
         
@@ -177,11 +185,15 @@ export default function Header() {
           <div className={classes.sectionDesktop}>
             
             <IconButton aria-label="show 17 new notifications" color="inherit">
-             <img src={Recurso131} alt="avatar" className={classes.linkk} />
+            
+              <div><Link to="/reconocimientoapple" ><img src={Recurso701} className={classes.link} alt="avatar" /></Link></div>
+               <div> <Link to="/capacitacion" ><img src={Recurso703} className={classes.link} alt="avatar" /></Link></div>
+               <div> <Link to="/beneficios" ><img src={Recurso702} className={classes.link} alt="avatar" /></Link></div>
+                 <div>   <Link to="/hse" ><img src={Recurso704} className={classes.link} alt="avatar" /></Link></div>
     
             </IconButton>
             
-            <Link to="/" ><img src={Recurso133} alt="avatar" className={classes.link} /><br/><img src={Recurso132} className={classes.link} alt="avatar" /></Link>
+            <Link to="/" ><img src={Recurso133} alt="avatar" className={classes.salirr} /><br/><img src={Recurso132} className={classes.salirr} alt="avatar" /></Link>
               
             
           </div>

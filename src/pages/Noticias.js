@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import Sidebar from '../components/Sidebar'
 
 import Footer from '../components/Footer';
@@ -9,7 +9,7 @@ import Recurso412 from '../assets/projects_images/Recurso 412.png'
  import Recurso498 from '../assets/projects_images/Recurso 498.png'
  import Recurso499 from '../assets/projects_images/Recurso 499.png'
  import Recurso500 from '../assets/projects_images/Recurso 500.png'
-
+import Recurso319 from '../assets/projects_images/Recurso 319.png'
 
 
  const img=<img src={Recurso412} alt="avatar" className="imgTitulo" />
@@ -18,6 +18,24 @@ import Recurso412 from '../assets/projects_images/Recurso 412.png'
  const noti3=<div><img src={Recurso499} alt="avatar" className="img3" /><hr/></div>
  const noti4=<img src={Recurso500} alt="avatar" className="img3" />
 export default function Cumpleaños() {
+   const [datos, setDatos]= useState([]);
+ 
+
+ useEffect(() => {
+   
+   obtenerDatos()
+  
+  
+ }, [setDatos])
+
+ const obtenerDatos = async ()=>{
+   const data=await fetch("http://dev.love.cl:11337/sabias-que-contenidos");
+   const contentt= await data.json()
+   setDatos(contentt)
+   console.log(contentt)
+ }
+
+
     return (
         <div className="app">
        <Header/>
@@ -36,7 +54,7 @@ export default function Cumpleaños() {
         </div>
          <div className="col-lg-12 col-sm-12">
          
-         <Footer/>
+         <Footer imgFooter={Recurso319}/>
         
          </div>
      </div>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import Sidebar from '../components/Sidebar'
 import Footer from '../components/Footer';
 import Header from '../components/Header';
@@ -6,6 +6,7 @@ import Contenido from '../components/Contenido';
 import Recurso581 from '../assets/projects_images/Recurso 581.png'
 import Recurso537 from '../assets/projects_images/Recurso 537.png'
 import Recurso538 from '../assets/projects_images/Recurso 538.png'
+import Recurso319 from '../assets/projects_images/Recurso 319.png'
  const img=<img src={Recurso581} alt="avatar" className="imgTitulo" />
  const content=<div>
     
@@ -18,6 +19,24 @@ import Recurso538 from '../assets/projects_images/Recurso 538.png'
 
 </div>
 export default function NuestroEquipo() {
+   const [datos, setDatos]= useState([]);
+ 
+
+ useEffect(() => {
+   
+   obtenerDatos()
+  
+  
+ }, [setDatos])
+
+ const obtenerDatos = async ()=>{
+   const data=await fetch("http://dev.love.cl:11337/sabias-que-contenidos");
+   const contentt= await data.json()
+   setDatos(contentt)
+   console.log(contentt)
+ }
+
+
     return (
         <div className="app">
         <Header/>
@@ -36,7 +55,7 @@ export default function NuestroEquipo() {
         </div>
          <div className="col-lg-12 col-sm-12">
          
-         <Footer/>
+         <Footer imgFooter={Recurso319}/>
         
          </div>
         </div>

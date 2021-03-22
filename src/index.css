@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Merriweather:wght@300&display=swap');
+
 
 body {
     background-image: url("assets/projects_images/Recurso\ 140.png");
-    background-attachment: fixed;
+    
+
     color: #354538;
     font-family: sans-serif;
 
@@ -29,6 +30,7 @@ body {
     margin-left: 10px;
     
 }
+
 .icon_flotante1{
     position: absolute;
     margin-top: -192px;
@@ -129,7 +131,7 @@ a:hover {
 }
 .manzana{
     position: absolute;
-    width: 76px;
+    width: 70px;
     margin-left: 4px;
 }
 .img1{
@@ -230,6 +232,13 @@ a:hover {
     height: 600px;
    
 }
+.bienestar{
+    background: url("assets/projects_images/Recurso\ 20.png");
+    background-repeat: inherit;
+    position: relative;
+    height: 500px;
+   width: 100%;
+}
 
 
 .sidebar__icon {
@@ -305,7 +314,7 @@ a:hover {
 }
 .img_cercaaaa{
     width: 350px;
-    height: 218px;
+    height: 213px;
     margin-right: auto;
     margin-top: -15px;
    
@@ -328,7 +337,7 @@ a:hover {
     
     color:#032342;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .sidebar__email {
@@ -656,8 +665,14 @@ a:hover {
     .icon_flotante{
         position: absolute;
         width: 70px;
-        margin-left: -300px;
-        margin-top: 20px; 
+        margin-left: -260px;
+        margin-top: 80px; 
+    }
+    .icon_flotante1{
+        position: absolute;
+        width: 70px;
+        margin-left: -260px;
+        margin-top: 40px; 
     }
   
     .noticias{
@@ -674,10 +689,10 @@ a:hover {
        
     }
     .sidebar_r{
-       height: 213px;
+       height: 186px;
         width: 50px;
-        margin-left:267px;
-         margin-top: -232px;
+        margin-left:240px;
+         margin-top: -239px;
          position: absolute;
     }
     .sidebar_{
@@ -687,10 +702,10 @@ a:hover {
        
     }
     .sideb{
-        height: 202px;
-        margin-top: -231px;
+        height: 176px;
+        margin-top: -188px;
          width: 50px;
-         margin-left: 270px;
+         margin-left: 242px;
          position: absolute;
     }
     .contenido{

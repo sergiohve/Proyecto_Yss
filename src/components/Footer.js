@@ -23,7 +23,7 @@ const useStyles = makeStyles({
   }
 });
 
-export default function Footer() {
+export default function Footer({imgFooter}) {
   const classes = useStyles();
   
 
@@ -34,7 +34,7 @@ export default function Footer() {
        <div className="col-lg-12 col-sm-12">
          
          <img src={Recurso137} alt="avatar" className={classes.imgTitulo} />
-         <img src={Recurso395} alt="avatar" className={classes.imgTitulo1}/>
+         <img src={imgFooter} alt="avatar" className={classes.imgTitulo1}/>
          </div>
          
          

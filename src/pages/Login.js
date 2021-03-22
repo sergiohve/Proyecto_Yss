@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, {useState, useEffect} from 'react'
 
 import { Formik, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
@@ -22,7 +22,7 @@ const validationSchema = Yup.object().shape({
 
     email: Yup.string()
     .email("Tù rut es incorrecto")
-    .required("Por favor ingrese su Rut"),
+    .required("Ingrese su Rut"),
 });
 
 const Login=()=> {
@@ -52,10 +52,10 @@ if(showComponent==true){
          
          
           // We need a valid password
-          if (!values.password) errors.password = "La contraseña es requerida";
+          if (!values.password) errors.password = "Contraseña es requerida";
           else if (`${values.password}`.length < 7)
             errors.password =
-              "La contraseñaes de minimo 7 caracteres";
+              "Minimo 7 caracteres";
 
           console.log({ values, errors });
 
