@@ -15,6 +15,7 @@ import {
 
 import './StyleLogin.css'; 
 import Recurso440 from '../assets/projects_images/Recurso 440.png'
+import { SettingsBackupRestoreRounded } from '@material-ui/icons';
 
 
 
@@ -28,6 +29,9 @@ const validationSchema = Yup.object().shape({
 const Login=()=> {
   const [formValues, setFormValues] = useState();
   const [showComponent, setShowComponent]=useState(false);
+  const [cargandoUsuario, setCargandoUsuario]= useState(true);
+
+
 
   const accion=()=>{
     setShowComponent(true)

@@ -7,9 +7,9 @@ import CardContent from '@material-ui/core/CardContent';
 const useStyles = makeStyles({
   root: {
     width: "100%",
-    minHeight: 'calc(792px - 200px)',
-    height: 'calc(100% - 100px)',
-    marginBottom: "30px",
+    minHeight: 'calc(700px - 100px)',
+   
+   
     background: "#eeeeef",
     
     
@@ -37,6 +37,7 @@ export default function Contenido({titulo, contenido, img1, img2, img3, noti1, n
           {noti3}
            
            {noti4}
+          
         
 
 

@@ -14,7 +14,7 @@ import Recurso645 from '../assets/projects_images/Recurso 645.png'
 import Recurso646 from '../assets/projects_images/Recurso 646.png'
 import  {useForm} from "react-hook-form"
 import axios from "axios"
- 
+import Recurso319 from '../assets/projects_images/Recurso 319.png'
  const img=<img src={Recurso504} alt="avatar" className="imgTitulo" />
  
 
@@ -68,7 +68,7 @@ const enviarDatos = (event) => {
     }
 
   const content=(
-    <div style={{background: "#0084ff", width:"103%", marginLeft: "-13px", marginTop: "-12px", borderRadius: "5px"}}>
+    <div style={{background: "#6BABF8", width:"103%", marginLeft: "-13px", marginTop: "-12px", borderRadius: "5px"}}>
        <div className="row app__row">
           <div className="col-lg-12 col-sm-12">
           
@@ -76,7 +76,7 @@ const enviarDatos = (event) => {
 
             <input type="Email" className="form-control" placeholder="Email:" style={{marginTop: "30px"}}/>
 
-             <textarea className="form-control" placeholder="Email:" style={{marginTop: "30px", height: "400px"}}></textarea>
+             <textarea className="form-control" placeholder="Descripción:" style={{marginTop: "30px", height: "400px"}}></textarea>
           </div>
           
         </div>
@@ -112,7 +112,7 @@ const enviarDatos = (event) => {
         </div>
          <div className="col-lg-12 col-sm-12">
          
-         <Footer/>
+         <Footer imgFooter={Recurso319}/>
         
          </div>
      </div>

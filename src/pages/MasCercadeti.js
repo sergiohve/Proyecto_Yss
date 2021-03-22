@@ -32,6 +32,7 @@ import Recurso114 from '../assets/projects_images/Recurso 114.png'
 import Recurso555 from '../assets/projects_images/Recurso 555.png'
 import Recurso556 from '../assets/projects_images/Recurso 556.png'
 import Recurso137 from '../assets/projects_images/Recurso 137.png'
+import Recurso116 from '../assets/projects_images/Recurso 116.png'
 
 
 import Recurso558 from '../assets/projects_images/Recurso 558.png'
@@ -208,7 +209,7 @@ export default function MasCercadeti() {
             aria-label="open drawer"
           >
              <IconButton  color="inherit">
-             <Link to="/" ><img src={Recurso133} alt="avatar" className={classes.link} /><br/><p  className={classes.nombre}>Sergio Herrera</p></Link>
+             <Link to="/" ><img src={Recurso133} alt="avatar" className={classes.link} /><br/><p  className={classes.nombre}><img src={Recurso116} alt="avatar" className={classes.link} /></p></Link>
            
            
             </IconButton>
@@ -299,12 +300,12 @@ export default function MasCercadeti() {
         </div>
          <div className="col-lg-4 col-md-12 col-sm-12">
          <h3 className="titulo_cerca">Reconocimiento Apple</h3>
-         <Link to="/reconocimientoapple" className="link"><img src={Recurso114} alt="avatar" className="manzana" /><img src={Recurso142} alt="avatar" className="img_cerca" /></Link>
+         <Link to="/reconocimientoapple" className="link"><img src={Recurso114} alt="avatar" className="manzana1" /><img src={Recurso142} alt="avatar" className="img_cerca" /></Link>
 
          </div>
           <div className="col-lg-4 col-md-12 col-sm-12">
           <h3 className="titulo_cercaa">Capacitación</h3>
-          <Link to="/capacitacion" className="link"><img src={Recurso555} alt="avatar" className="manzana" /><img src={Recurso599} alt="avatar" className="img_cercaa" /></Link>
+          <Link to="/capacitacion" className="link"><img src={Recurso555} alt="avatar" className="manzana1" /><img src={Recurso599} alt="avatar" className="img_cercaa" /></Link>
 
          </div>
          </div>
@@ -315,11 +316,11 @@ export default function MasCercadeti() {
          </div>
          <div className="col-lg-4 col-md-12 col-sm-12">
          <h3 className="titulo_cercaaa">Beneficios</h3>
-         <Link to="/Beneficios" className="link"><img src={Recurso556} alt="avatar" className="manzana" /><img src={Recurso598} alt="avatar"  className="img_cercaaaa" /></Link>
+         <Link to="/Beneficios" className="link"><img src={Recurso556} alt="avatar" className="manzana1" /><img src={Recurso598} alt="avatar"  className="img_cercaaaa" /></Link>
        </div>
        <div className="col-lg-4 col-md-12 col-sm-12">
        <h4 className="titulo_cercaaa">HSE-Seguridad y Prevención</h4>
-             <Link to="/HSE" className="link"><img src={Recurso558} alt="avatar" className="manzana" />  <img src={Recurso600} alt="avatar"  className="img_cercaaaa" /></Link>
+             <Link to="/HSE" className="link"><img src={Recurso558} alt="avatar" className="manzana1" />  <img src={Recurso600} alt="avatar"  className="img_cercaaaa" /></Link>
        </div>
        </div>
 

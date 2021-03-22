@@ -131,13 +131,34 @@ a:hover {
 }
 .manzana{
     position: absolute;
-    width: 70px;
-    margin-left: 4px;
+    width: 160px;
+    margin-left: -190px;
+}
+.manzana1{
+    position: absolute;
+    width: 80px;
+    margin-left: 10px;
+   
 }
 .img1{
     width: 820px;
     height: 170px;
     
+}
+.sabias1{
+    width: 190px;
+    height: 140px;
+
+}
+.sabias2{
+    width: 190px;
+}
+.img1Sabias{
+    width: 600px;
+}
+.mantexto{
+    height: 685px;
+    width: 100%;
 }
 .img2{
     width: 100%;
@@ -233,11 +254,7 @@ a:hover {
    
 }
 .bienestar{
-    background: url("assets/projects_images/Recurso\ 20.png");
-    background-repeat: inherit;
-    position: relative;
-    height: 500px;
-   width: 100%;
+   
 }
 
 
