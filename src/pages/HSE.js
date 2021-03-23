@@ -9,7 +9,7 @@ import Recurso604 from '../assets/projects_images/Recurso 604.png'
 import Recurso501 from '../assets/projects_images/Recurso 501.png'
 import Recurso319 from '../assets/projects_images/Recurso 319.png'
 
- const mano= <img src={Recurso501} alt="avatar" />
+ const mano= <img src={Recurso501} alt="avatar" className="mano" />
  const img=<img src={Recurso385} alt="avatar" className="imgTitulo" />
  const imgcontent= <img src={Recurso604} alt="avatar" className="imgcontent" />
  const content=<div className="contenidoo">

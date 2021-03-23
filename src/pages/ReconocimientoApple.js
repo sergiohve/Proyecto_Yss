@@ -7,18 +7,15 @@ import Contenido from '../components/Contenido';
 import Recurso134 from '../assets/projects_images/Recurso 134.png'
 import Recurso512 from '../assets/projects_images/Recurso 512.png'
 import Recurso511 from '../assets/projects_images/Recurso 511.png'
-import Recurso509 from '../assets/projects_images/Recurso 509.png'
-import Recurso510 from '../assets/projects_images/Recurso 510.png'
-import Recurso513 from '../assets/projects_images/Recurso 513.png'
-
 import Recurso319 from '../assets/projects_images/Recurso 319.png'
-import Recurso515 from '../assets/projects_images/Recurso 515.png'
-import Recurso514 from '../assets/projects_images/Recurso 514.png'
+import Recurso501 from '../assets/projects_images/Recurso 501.png'
+import Recurso510 from '../assets/projects_images/Recurso 510.png'
+import Recurso509 from '../assets/projects_images/Recurso 509.png'
 
 
  
  const img=<img src={Recurso134} alt="avatar" className="imgTitulo" />
- 
+
 
 
 export default function ReconocimientoApple() {
@@ -46,6 +43,9 @@ const content=(
        <div className="col-lg-12 col-sm-12">
        <img src={Recurso512} alt="avatar" className="mantexto" />
        <img src={Recurso511} alt="avatar" className="manzana" />
+       <img src={Recurso510} alt="avatar" className="fondoReconoce" />
+       <img src={Recurso509} alt="avatar" className="reconoce" />
+       <img src={Recurso501} alt="avatar" className="mano" />
       </div>
  </div>      
 

@@ -7,7 +7,7 @@ import CardContent from '@material-ui/core/CardContent';
 const useStyles = makeStyles({
   root: {
     width: "100%",
-    minHeight: 'calc(700px - 100px)',
+    minHeight: 'calc(700px - 10px)',
    
    
     background: "#eeeeef",

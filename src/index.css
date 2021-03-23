@@ -140,11 +140,7 @@ a:hover {
     margin-left: 10px;
    
 }
-.img1{
-    width: 820px;
-    height: 170px;
-    
-}
+
 .sabias1{
     width: 190px;
     height: 140px;
@@ -160,20 +156,36 @@ a:hover {
     height: 685px;
     width: 100%;
 }
+.img1{
+    width: 820px;
+    height: 180px;
+    
+}
 .img2{
     width: 100%;
-    height: 170px;
+    height: 180px;
     margin-top: 20px;
 }
 .img3{
     width: 100%;
-    height: 170px;
+    height: 180px;
     margin-top: 20px;
+   
 }
 .ben1{
     position:absolute;
     margin-top: -120px;
     width: 300px;
+}
+.fondoReconoce{
+    width: 200px;
+    margin-left: 295px;
+}
+.reconoce{
+    position: absolute;
+    width: 200px;
+    margin-left: -200px;
+    margin-top: 15px;
 }
 
 .ben2{
@@ -202,15 +214,17 @@ a:hover {
     width: 100%;
 }
 .capacita{
-    height: 870px;
+    height: 790px;
     width: 100%;
+    margin-bottom: -150px;
 }
 .manCapa{
     position: absolute;
     margin-left: -275px;
     width: 250px;
     height: 150px;
-    margin-top: 550px;
+    margin-top: 500px;
+    
 }
 .organigramaEquipo{
     width: 600px;
@@ -235,6 +249,11 @@ a:hover {
    
    
 }
+.mano{
+    width: 30px;
+    margin-left: 5px;
+    margin-top: 14px;
+}
 .sideb{
     height: 200px;
     margin-top: 20px;
@@ -253,11 +272,7 @@ a:hover {
     height: 600px;
    
 }
-.bienestar{
 
-   width: 100%;
-
-}
 
 
 .sidebar__icon {

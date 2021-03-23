@@ -14,7 +14,9 @@ import Capacitacion from './pages/Capacitacion';
 import Beneficios from './pages/Beneficios';
 import HSE from './pages/HSE';
 import Buzondesugerencias from './pages/Buzondesugerencias';
-import Bienestar from './pages/Bienestar';
+import Bienestar from './pages/bienestar/Bienestar';
+import Bienestar2 from './pages/bienestar/Bienestar2';
+import Bienestar3 from './pages/bienestar/Bienestar3';
 import Login from './pages/Login';
 
 
@@ -42,6 +44,8 @@ function App() {
               <Route  path="/hse"  component={HSE} />
               <Route  path="/buzondesugerencias"  component={Buzondesugerencias} />
                <Route  path="/bienestar"  component={Bienestar} />
+               <Route  path="/bienestar2"  component={Bienestar2} />
+               <Route  path="/bienestar3"  component={Bienestar3} />
               <Route component={PaginaNoEncontrada}/>
              
                
